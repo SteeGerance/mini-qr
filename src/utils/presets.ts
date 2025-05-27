@@ -38,8 +38,6 @@ export const defaultPreset: Preset = {
   name: 'Prégérance',
   image: PLACEHOLDER_IMAGE_URL,
   ...defaultPresetOptions,
-  ...PlainConfig.props,
-  style: PlainConfig.style
 }
 
 export const allPresets: Preset[] = [defaultPreset]
