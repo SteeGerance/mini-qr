@@ -38,8 +38,10 @@ export const defaultPreset: Preset = {
   name: 'Prégérance',
   data: 'Entrez votre lien ici, sinon vous pouvez changé de modèle en bas à droite de cette saisie de texte.',
   image: PLACEHOLDER_IMAGE_URL,
+  ...defaultPresetOptions,
+  name: 'Plain',
+  ...PlainConfig.props,
+  style: PlainConfig.style
 }
 
-export const allPresets: Preset[] = [
-  defaultPreset,
-]
+export const allPresets: Preset[] = [defaultPreset]
