@@ -162,7 +162,7 @@ onUnmounted(() => {
       <div class="flex flex-col gap-4">
         <!-- App title -->
         <div class="flex items-center">
-          <h1 class="text-xl text-gray-700 dark:text-gray-100">MiniQR</h1>
+          <h1 class="text-xl text-gray-700 dark:text-gray-100">QRCode by Prégérance</h1>
         </div>
 
         <!-- GitHub link -->
