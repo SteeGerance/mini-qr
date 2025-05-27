@@ -1,4 +1,4 @@
-const PLACEHOLDER_IMAGE_URL = 'https://www.pregerance.fr/pics/logo.png';
+import PLACEHOLDER_IMAGE_URL from '@/assets/placeholder_image.png'
 import PlainConfig from '@/assets/presets/plain.json'
 import type { DrawType, Options as StyledQRCodeProps } from 'qr-code-styling'
 
