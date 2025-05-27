@@ -244,19 +244,6 @@ onUnmounted(() => {
         <hr class="border-zinc-200 dark:border-zinc-700 md:hidden" />
 
         <!-- Footer Section for Mobile (hidden on md and up) -->
-        <div
-          class="relative flex flex-col gap-2 text-sm text-zinc-600 dark:text-zinc-400 md:hidden"
-        >
-          <div class="flex items-center justify-center gap-1">
-            <span>{{ t('Created by') }}</span>
-            <a
-              href="https://github.com/lyqht"
-              target="_blank"
-              class="text-zinc-900 hover:text-zinc-700 dark:text-zinc-100 dark:hover:text-zinc-300"
-              >Estee Tey 🐧🌻</a
-            >
-          </div>
-        </div>
       </div>
     </div>
   </div>
