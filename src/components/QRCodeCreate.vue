@@ -276,8 +276,8 @@ const recommendedErrorCorrectionLevel = computed<ErrorCorrectionLevel | null>(()
 //#endregion
 
 //#region /* Frame settings */
-const DEFAULT_FRAME_TEXT = ' '
-const frameText = ref(DEFAULT_FRAME_TEXT)
+const DEFAULT_FRAME_TEXT = 'PREGERANCE'
+const frameText = 'PREGERANCE'
 const frameTextPosition = ref<'top' | 'bottom' | 'left' | 'right'>('bottom')
 const showFrame = ref(false)
 const frameStyle = ref<FrameStyle>({
