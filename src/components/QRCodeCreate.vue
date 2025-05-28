@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import logo from '@/assets/logo.png'
 import CopyImageModal from '@/components/CopyImageModal.vue'
 import DataTemplatesModal from '@/components/DataTemplatesModal.vue'
 import QRCodeFrame from '@/components/QRCodeFrame.vue'
@@ -131,11 +132,11 @@ const qrOptions = computed(() => ({
 }))
 
 const qrCodeProps = computed<StyledQRCodeProps>(() => ({
-  data: data.value || 'Have a beautiful day!',
+  data: 'Bienvenue chez PREGERANCE !',
   image: image.value,
-  width: width.value,
-  height: height.value,
-  margin: margin.value,
+  width: 200,
+  height: 200,
+  margin: 0,
   dotsOptions: dotsOptions.value,
   cornersSquareOptions: cornersSquareOptions.value,
   cornersDotOptions: cornersDotOptions.value,
@@ -206,19 +207,19 @@ watch(selectedPreset, () => {
     data.value = selectedPreset.value.data
   }
 
-  image.value = selectedPreset.value.image
+  image.value = logo
   width.value = selectedPreset.value.width
   height.value = selectedPreset.value.height
   margin.value = selectedPreset.value.margin
   imageMargin.value = selectedPreset.value.imageOptions.margin
-  dotsOptionsColor.value = selectedPreset.value.dotsOptions.color
-  dotsOptionsType.value = selectedPreset.value.dotsOptions.type
-  cornersSquareOptionsColor.value = selectedPreset.value.cornersSquareOptions.color
-  cornersSquareOptionsType.value = selectedPreset.value.cornersSquareOptions.type
-  cornersDotOptionsColor.value = selectedPreset.value.cornersDotOptions.color
-  cornersDotOptionsType.value = selectedPreset.value.cornersDotOptions.type
-  styleBorderRadius.value = getNumericCSSValue(selectedPreset.value.style.borderRadius as string)
-  styleBackground.value = selectedPreset.value.style.background
+  dotsOptionsColor.value = "#000000"
+  dotsOptionsType.value = "square"
+  cornersSquareOptionsColor.value = "#000000"
+  cornersSquareOptionsType.value = "square"
+  cornersDotOptionsColor.value = "#000000"
+  cornersDotOptionsType.value = "square"
+  styleBorderRadius.value = 24
+  styleBackground.value = "#ffffff"
   includeBackground.value = selectedPreset.value.style.background !== 'transparent'
   errorCorrectionLevel.value =
     selectedPreset.value.qrOptions && selectedPreset.value.qrOptions.errorCorrectionLevel
