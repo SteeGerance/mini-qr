@@ -1119,18 +1119,6 @@ const updateDataFromModal = (newData: string) => {
           >
           <AccordionContent class="px-2 pb-8 pt-4">
             <div class="space-y-8">
-              <div>
-                <label>{{ t('Preset') }}</label>
-                <div class="flex flex-row items-center justify-start gap-2">
-                  <Combobox
-                    :items="allPresetOptions"
-                    v-model:value="selectedPresetKey"
-                    v-model:open="isPresetSelectOpen"
-                    :button-label="t('Select preset')"
-                    :insert-divider-at-indexes="[0, 2]"
-                  />
-                </div>
-              </div>
               <div class="w-full">
                 <div class="flex w-full flex-col flex-wrap gap-4 sm:flex-row sm:gap-x-8">
                   <!-- Data to encode area -->
