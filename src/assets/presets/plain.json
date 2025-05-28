@@ -27,5 +27,10 @@
   "style": {
     "borderRadius": "24px",
     "background": "#ffffff"
-  }
+  },
+  "frame":{
+	  "text":"",
+	  "position":"bottom",
+	  "style":{"textColor":"#000000","backgroundColor":"#ffffff","borderColor":"#000000","borderWidth":"0px","borderRadius":"0px","padding":"0px"}
+	}
 }
