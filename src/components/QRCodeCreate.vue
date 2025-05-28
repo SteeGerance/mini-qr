@@ -218,7 +218,7 @@ watch(selectedPreset, () => {
   cornersSquareOptionsType.value = "square"
   cornersDotOptionsColor.value = "#000000"
   cornersDotOptionsType.value = "square"
-  styleBorderRadius.value = 24
+  styleBorderRadius.value = 0
   styleBackground.value = "#ffffff"
   includeBackground.value = selectedPreset.value.style.background !== 'transparent'
   errorCorrectionLevel.value =
